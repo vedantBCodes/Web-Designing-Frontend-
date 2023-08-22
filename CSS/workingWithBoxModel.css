@@ -1,0 +1,19 @@
+h1{
+    width:100px;
+    height:100px;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-right:100px;
+    padding-left:100px;
+    margin:200px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+     /* border:2px solid black; */
+    border-radius: 20px;
+    color:blue;
+    background-color: pink;
+  }
+  body{
+    background-image: url(https://imgs.search.brave.com/yWaljRYlx1UjFPhPfJWomLHZGV5vdhP63lNLcUucg1g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtY3NlLmNhbnZh/LmNvbS9ibG9iLzU2/MTQwNS9pbWFnZTIx/LmpwZw);
+  }

@@ -1,0 +1,41 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+div{
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    padding:30px;
+    /* height:200px; */
+    margin:10px;
+    background-color: antiquewhite;
+    border:2px solid black;
+    border-radius: 10px;
+}
+#d1{
+    position:static;
+    top:50px;  /* top,bottom,right and left property will not work on static position */
+}
+#d2{
+    position:relative;
+    top:50px;  /* 50px relative to its original position */
+    left: 50px;
+}
+#d3{
+    position:absolute;
+    top:50px;   
+    left:50px;
+}
+#d4{
+    position: fixed;
+     top:200px; /* Positioned related to browser */
+    left:100px;
+}
+#d5{
+    position: sticky; /* Positioned stick to the page */
+    top:300px;
+    
+}

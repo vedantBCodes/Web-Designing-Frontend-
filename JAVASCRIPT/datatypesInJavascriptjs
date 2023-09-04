@@ -1,0 +1,37 @@
+//  Datatypes in Javascript
+
+//1-Primitive datatypes
+
+   //  i-Numbers 
+
+         //Integer values
+
+var a=20;
+
+         //FLoating point values
+
+var b=10.5;
+
+   // ii-String
+
+var name="vedant";
+
+   // iii-Boolean
+
+var check=true;
+
+//2-Composite datatypes
+
+  // i-Array
+  // ii-Object
+
+//3-Special datatypes
+
+   // i-Undefined
+
+var x=5;   //defined datatype
+var y;    //undefined datatype
+
+   // ii-Null
+
+var z=null;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <script>
+        //Loops are the iterative statement that allows us to execute the same task over and over
+        //Types of loops
+        //i---> for loop
+
+        console.log("For Loop");
+        for(var i=1;i<=10;i++)
+        {
+            console.log(i);
+        }
+
+        //Iterating Over array
+
+        var studentsName=['vedant','omkar','pratik','Rahul'];
+
+        for(var i=0;i<studentsName.length;i++)
+        {
+            console.log(`${studentsName[i]}`);
+        }
+
+        //ii---> while loop  (repeats a chunk of code till a perticular condition is true)
+
+        console.log("While Loop");
+        var i=1;
+        while(i<=10)
+        {
+            console.log(i);
+            i++;
+        }
+
+        //iii--->do while loop  (Executes at least once)
+
+        console.log("Do while Loop");
+        var j=1;
+        do{
+            console.log(j);
+            j++;
+        }
+        while(j<=10);
+
+        //iv--->for....of loop   (Nice and easy way of iterating over array)
+
+        console.log("For...of Loop");
+        var days=['sun','mon','tue','wed','thu','fri','sat'];
+        
+        for(var day of days)
+        {
+            console.log(day)
+        }
+
+        //v---->for...in loop    (for...of loop is not iterable over an object so we have for...in loop)
+
+        console.log("For...in Loop");
+        var student={
+            name:"vedant",
+            age:21,
+            course:"BCA"
+        }
+        for(var data in student)
+        {
+            console.log(`${data} = ${student[data]}`);
+        }
+    </script>
+</body>
+</html>

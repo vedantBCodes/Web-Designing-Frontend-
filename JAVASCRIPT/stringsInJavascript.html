@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Strings in JS</title>
+</head>
+<body>
+    <script>
+        var name="vedant"; 
+
+        //length of string 
+
+        var len=name.length;
+
+        //Accessing individual characters in a string
+
+        for(var i=0;i<len;i++)
+        {
+            console.log(`Character at index ${i} is ${name[i]}`);
+        }
+        
+        //type of string will be string itself
+
+        console.log(`Type of string will be ${typeof(name)}`);
+ 
+        //String Methods
+
+        console.log(`Uppercase string : ${name.toUpperCase()}`);
+        console.log(`Lowercase string : ${name.toLowerCase()}`);
+
+        var name2="  vedant ";
+        console.log(`name2 string after trim ${name2.trim()}`);
+
+        //Getting index of characters in a string
+
+        console.log(`Index of character 'v' is ${name.indexOf('v')}`);
+        console.log(`Index of character 'n' is ${name.indexOf('n')}`);
+        console.log(`Index of character 't' is ${name.indexOf('t')}`);
+
+        //Slicing string
+
+        console.log(`String after slicing : ${name.slice(0,4)}`);
+        console.log(`String after slicing : ${name.slice(2,7)}`);  //end-index is optional
+
+        //Replacing a string
+
+        console.log(`String after replacing a substring : ${name.replace("ved","ked")}`);
+
+    </script>
+</body>
+</html>

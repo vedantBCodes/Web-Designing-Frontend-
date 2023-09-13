@@ -14,7 +14,7 @@ var b=10.5;
 
    // ii-String
 
-var name="vedant";
+var name1="vedant";
 
    // iii-Boolean
 
@@ -23,7 +23,15 @@ var check=true;
 //2-Composite datatypes
 
   // i-Array
+
+var arr=['mon','sun','wed'];
+
   // ii-Object
+
+var student={ name:"vedant",
+              age:21,
+              course:"BCA"
+            }
 
 //3-Special datatypes
 
@@ -35,3 +43,18 @@ var y;    //undefined datatype
    // ii-Null
 
 var z=null;
+
+//typeof() operator
+
+//typeof() operator is used to find the type of a datatype
+
+console.log(`Type of variable a is ${typeof(a)}`);
+console.log(`Type of variable b is ${typeof(b)}`);
+console.log(`Type of variable name1 is ${typeof(name1)}`);
+console.log(`Type of variable check is ${typeof(check)}`);
+console.log(`Type of variable arr is ${typeof(arr)}`);  
+console.log(`Type of variable student is ${typeof(student)}`);
+console.log(`Type of variable y is ${typeof(y)}`);
+console.log(`Type of variable z is ${typeof(z)}`);
+
+//type of array,null and objects will always be "object"

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <script>
+       var arr1=[1,2,3,4,5];
+       var arr2=[6,7,8,9,10];
+
+        //Array methods
+        //i---> concat()  ---> Performs concatenation of two arrays
+
+        var arr3=arr1.concat(arr2);
+        console.log(arr3);
+
+        //ii---> Includes()  ---->Checks whether the item is present in a given array or not
+
+        var check=arr1.includes(5);
+        if(check==true)
+        {
+            console.log(`5 is there in a given array `);
+        }
+        else
+        {
+            console.log(`5 is not there in a given array `);
+        }
+        
+
+        //iii-->indexOf()  --->Return the index of a given item
+
+        console.log(`Index of 5 is : ${arr1.indexOf(5)}`);
+
+        //iv-->reverse()  --->Reverse the origin array
+
+        arr1.reverse();
+        console.log(arr1);
+
+        //v--->slice()  --->slice the given array
+
+        var arr4=arr2.slice(2,6);
+        console.log(arr4);
+
+    </script>
+</body>
+</html>

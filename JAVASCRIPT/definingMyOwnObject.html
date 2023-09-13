@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <script>
+        //One can define their own objects including some variables and methods
+
+        var myMath={
+            pi:3.14,    //variable defined in an object
+            square: function(num)
+            {
+                return num*num;
+            },
+            cube: function(num)
+            {
+                return num*num*num;
+            },
+            power: function(num,pow)
+            {
+                return num**pow;
+            },
+            simpleInterest: function(p,n,r)
+            {
+                return (p*r*n)/100;
+            }
+        }
+
+        //Here i have defined an object named myMath containing some predefined variables and methods
+        //Now i can use all the defined variables and methods directly using the object name
+
+        console.log(`The value of pi is : ${myMath.pi}`);
+        console.log(`The square of 25 is : ${myMath.square(25)}`);
+        console.log(`The cube of 5 is : ${myMath.cube(5)}`);
+        console.log(`The 2^3 is : ${myMath.power(2,3)}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <script>
+        //Arrays in javascript are the collection of both homogeneous and heterogeneous data items 
+
+        var arr=['Mon','Tue','Wed','Thu','Fri','Sat']
+
+        //Array length
+
+        var len=arr.length;
+        console.log(`Length of given array is : ${len}`);
+
+        //Accessing array items using index
+        //Arrays are index and the index of array starts from zero
+
+        for(var i=0;i<len;i++)
+        {
+           console.log(`Array item at index ${i} is : ${arr[i]}`);
+        }
+
+        //Array methods
+        //i---> push()  ---> Inserts an items at the end
+
+        arr.push('Sun');
+        console.log(arr);
+
+        //ii---> pop()  ---->Removes an item from the end
+
+        arr.pop();
+        console.log(arr);
+
+        //iii-->shift()  --->Removes an item from the start
+
+        arr.shift();
+        console.log(arr);
+
+        //iv-->unshift()  --->Add an item at the start
+
+        arr.unshift('mon');
+        console.log(arr);
+
+    </script>
+</body>
+</html>

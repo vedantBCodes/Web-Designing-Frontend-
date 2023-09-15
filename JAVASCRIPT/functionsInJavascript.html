@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Functions in js</title>
+</head>
+<body>
+    <script>
+        /*
+        Function is a block of code that performs a specific task
+        One can define a function once and can call it many times
+        */
+
+        //Function defining
+
+       function greeting()
+       {
+        console.log(`Hello Good morning `);
+       }
+
+       //Function calling
+
+       greeting();
+
+       //Function allows us to write resusable code
+
+       //Passing parameters and returning something from a function
+       
+       function greeting(name)
+       {
+           return (`Hello Good morning ${name}`);
+       }
+
+       //Function calling
+
+       var greetMsg=greeting("vedant");
+
+       console.log(greetMsg);
+
+    </script>
+</body>
+</html>

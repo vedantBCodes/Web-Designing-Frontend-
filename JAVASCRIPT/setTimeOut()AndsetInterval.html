@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>setTimeOut() and setInterval()</title>
+</head>
+<body>
+    <script>
+        /*
+
+        Javascript can be executed in time interval.This is called timing events.
+
+        1.setTimeOut()
+        2.setInterval()
+
+        */ 
+
+        // 1.setTimeOut()
+
+        var greet1=()=>{
+            console.log("Hlw  Good Morning *");
+        }
+
+        var greet2=()=>{
+            console.log("Have a nice day *");
+        }
+
+        setTimeout(greet1,1000);  //It will execute the greet1() function after 1000 milisecond i.e 1 sec of execution
+        setTimeout(greet2,2000);  //It will execute the greet2() function after 2000 milisecond i.e 2 sec of execution
+
+        // 1.setTimeOut()  -->It is same like setTimeOut() but executes the execution of function continously
+       
+        var greet3=()=>{
+            console.log("Hlw  Good Night *");
+        }
+
+        var greet4=()=>{
+            console.log("Have a sweet dream *");
+        }
+        setInterval(greet3,3000); 
+        setInterval(greet4,4000);
+    </script>
+</body>
+</html>

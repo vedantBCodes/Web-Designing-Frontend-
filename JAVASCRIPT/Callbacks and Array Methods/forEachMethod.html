@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>For Each Method</title>
+</head>
+<body>
+    <script>
+        //For Each() Method -->It is used to call a function once for each array element
+
+        var num=[1,2,3,4,5];
+
+        function square(x)
+        {
+            console.log(x*x);
+        }
+
+        num.forEach(square);  //No need to call a function , just pass the function name
+
+                              //OR
+
+        num.forEach(function(item){   //This pattern of function calling is very very common
+
+            console.log(item*item);
+
+        })
+            
+    </script>
+</body>
+</html>

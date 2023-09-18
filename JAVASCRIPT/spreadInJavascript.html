@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Spread</title>
+</head>
+<body>
+    <script>
+        //Spread -->Is used to spread the array into seperate arguments  i.e Spread allow us th spread thw array items
+
+        var nums=[3,4,2,5,1];
+
+       //var maxNum=Math.max(nums);   //It will throw error because we can't pass the whole array as argument
+       var maxNum=Math.max(...nums);   //It will pass the array items as arguments one by one
+
+        console.log(maxNum);
+
+       // var numCopy=nums;  //This will throw an error i.e we cannot copy array elements like this
+
+         var numCopy=[...nums];
+
+         console.log(numCopy);
+    </script>
+</body>
+</html>

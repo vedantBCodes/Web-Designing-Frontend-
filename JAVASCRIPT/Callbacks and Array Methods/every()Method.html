@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Every() Method</title>
+</head>
+<body>
+    <script>
+
+    //The Every() Method--->tests whether all the elements in an array pass the provided function
+    //It returns a boolean value
+    //Returns true if the function returns true for all elements
+
+    var nums=[2,4,6,8,10];
+
+    var checkForEven=nums.every(function(item){
+
+        if (item%2==0)
+        {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+    });
+    
+    console.log(checkForEven);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Filter() Method</title>
+</head>
+<body>
+    <script>
+        //The Filter() Method -->Creates a new array with all the elements that pass the test implemented by the provided function
+        
+        var nums=[1,2,3,4,5,6,7,8,9,10];
+
+        var evenNums=nums.filter(function(item){
+            return item%2==0;
+        })
+
+        //Our callback function returns true or false and if returns true then that number will be added in the array
+        //and the new array contains only those elements who pass the function
+
+        console.log((evenNums));
+    </script>
+</body>
+</html>

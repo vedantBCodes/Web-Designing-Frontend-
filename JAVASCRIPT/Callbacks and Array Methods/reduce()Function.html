@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport">
+    <title>Every() Method</title>
+</head>
+<body>
+    <script>
+
+    //The reduce() Method--->Executes a reducer function on each array elements in an array , resulting in a single value
+
+    var nums=[20,50,60,80,10];
+
+    var max=nums[0];
+    var maxNum=nums.reduce(function(max,item){
+          if(item>max)
+          {
+            max=item;
+          }
+          return max;
+    });
+    
+    console.log(maxNum);
+
+    </script>
+</body>
+</html>

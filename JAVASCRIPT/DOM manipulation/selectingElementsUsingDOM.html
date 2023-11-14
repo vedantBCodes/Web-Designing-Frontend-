@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecting Elements</title>
+  </head>
+  <body>
+    <div class="main">
+      <p id="par1">
+        Paragraph -1
+      </p>
+      <p id="par2">Paragraph -2
+      </p>
+      <input type="text" name="username" placeholder="Username">
+    </div>
+    <script>
+        // Selecting elements using DOM
+
+        // 1-->getElementById()
+
+        let par1=document.getElementById("par1");
+        console.log(par1);
+
+         // 2-->getElementsByName()  This method returns an array of elements  with the same name
+
+         let x=document.getElementsByName("username");  
+        console.log(x);
+
+        // 3-->getElementsByTagName()  This method also returns an array of elements  with the same tagName
+
+        let y=document.getElementsByTagName("p");
+        console.log(y);
+
+        // 4-->getElementsByClassName()  This method also returns an array of elements  with the same class name
+
+        let z=document.getElementsByClassName("main");
+        console.log(y);
+
+         // 5-->querySelector()  It returns only the first matching elements
+
+        //  i-For Tag
+        let a=document.querySelector("p");
+        console.log(a);
+
+        //  ii-For ID
+        let b=document.querySelector("#par1");
+        console.log(b);
+
+        //  iii-For Class
+        let c=document.querySelector(".main");
+        console.log(c);
+
+        // 6-->querySelectorAll()  It returns all the matching elements in the form of array
+
+        //  i-For Tag
+        let d=document.querySelectorAll("p");
+        console.log(d);
+
+        //  ii-For ID
+        let e=document.querySelectorAll("#par1");
+        console.log(e);
+
+        //  iii-For Class
+        let f=document.querySelectorAll(".main");
+        console.log(f);
+
+    </script>
+  </body>
+</html>

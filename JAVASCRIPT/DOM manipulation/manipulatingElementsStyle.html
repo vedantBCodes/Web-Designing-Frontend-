@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Elements Style</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username" style="background-color:azure; font-size: 30px; " class="c1 c2 c3">
+
+    <script>
+
+        // Style Property
+
+        let inputBox = document.getElementById("username");
+
+        console.log(inputBox.style);  //It will display all the inline style applied on an element along with some default inline style
+
+        console.log(inputBox.style.backgroundColor);
+        console.log(inputBox.style.fontSize); 
+
+        inputBox.style.padding="20px"; //It will set the padding
+
+        // CSS Text
+
+        console.log(inputBox.style.cssText);  //It will display all the inline style applied on an element along with some default inline style
+
+        inputBox.style.cssText="width:400px";  //It will override all the previous inline style applied
+        console.log(inputBox.style.cssText);
+
+        inputBox.style.cssText+="background-color:azure; font-size: 30px; padding:20px";  //It will concatenate the previous style
+        console.log(inputBox.style.cssText);
+
+        // getComputedStyle()   This method is window object method
+
+        console.log(window.getComputedStyle(inputBox));  //It will display all types of styles applied on an element
+        
+        console.log(window.getComputedStyle(inputBox).fontSize);
+        console.log(window.getComputedStyle(inputBox).padding);
+        
+        // className Property         It returns a list of classes applied on an element
+
+        console.log(inputBox.className);
+
+        inputBox.className="container1";   //It will override all the previously applied classes
+        console.log(inputBox.className);
+
+        inputBox.className += " container2 container3 container4";
+        console.log(inputBox.className);
+
+        // classList property         It returns a collection of classes applied on an element
+
+        console.log(inputBox.classList);
+
+        inputBox.classList.add("c1","c2");
+        console.log(inputBox.classList);
+
+        inputBox.classList.remove("c1","c2");
+        console.log(inputBox.classList);
+
+        inputBox.classList.replace("container1","c1");
+        console.log(inputBox.classList);
+
+        let check3=inputBox.classList.contains("container1");
+        console.log(check3);
+
+        let check4=inputBox.classList.contains("c1");
+        console.log(check4);
+
+        inputBox.classList.toggle("container4");  //It will remove container4 class because it is already present
+        console.log(inputBox.classList);
+
+        inputBox.classList.toggle("container4");  //It will add container4 class because it is not there
+        console.log(inputBox.classList);
+        
+    </script>
+</body>
+</html>

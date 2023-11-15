@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating HTML Elements</title>
+</head>
+<body>
+    <div id="menu">
+        <li>Home</li>
+        <li id="about">About</li>
+        <li id="blog">Blog</li>
+        <li style="display: none;" >Projects</li>
+    </div>
+    <script>
+
+        // creatElement() Method
+
+        let div = document.createElement("div");  //Element Created
+        div.innerHTML="<p>Paragraph</p>";    //inner HTML added
+        document.body.appendChild(div);     //inserted that element into body
+
+        div.id="par1";   //Giving ID to the newly created div
+        div.className="class1";   //Giving class to the newly created div
+
+        // appendChild() Method
+
+        let menu=document.getElementById("menu");
+        let list=document.createElement("li");
+        list.innerHTML="Contact Us";
+        menu.appendChild(list);
+
+        // textContent Property
+
+        console.log(menu.textContent);
+        console.log(menu.innerText);
+
+        // prepend() Method
+
+        menu.prepend(list);   //It will add the child node as the 1st child of parent node
+
+        // insertAdjacentHTML() Method
+
+        let heading=document.createElement("h");
+        menu.insertAdjacentHTML("beforebegin","before begin heading");
+        menu.insertAdjacentHTML("afterbegin","after begin heading");
+        menu.insertAdjacentHTML("beforeend","before end heading");
+        menu.insertAdjacentHTML("afterend","after end heading");
+
+        // removeChild()
+
+        let blog=document.getElementById("blog");
+        menu.removeChild(blog);
+
+        menu.removeChild(menu.lastElementChild);
+
+
+    </script>
+</body>
+</html>

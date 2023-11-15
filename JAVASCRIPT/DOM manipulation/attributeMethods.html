@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Methods</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username">
+
+    <script>
+        let inputBox=document.getElementById("username");
+        console.log(inputBox.attributes);   //It will return all the attributes
+
+        // getAttributes()
+
+        console.log(inputBox.getAttribute("type"));
+        console.log(inputBox.getAttribute("placeholder"));
+
+        // setAttributes()
+
+        console.log(inputBox.setAttribute("class","class1"));
+
+        // hasAttribute()
+
+        let check=inputBox.hasAttribute("type");
+        console.log(check);
+
+        let check2=inputBox.hasAttribute("name");
+        console.log(check2);
+
+        // removeAttribute()
+
+        inputBox.removeAttribute("placeholder");
+        console.log(inputBox.attributes); 
+        
+    </script>
+</body>
+</html>

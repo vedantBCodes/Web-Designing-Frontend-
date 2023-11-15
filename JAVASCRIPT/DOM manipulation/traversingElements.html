@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing Elemenets</title>
+  </head>
+  <body>
+    <div class="title">
+      <p class="text">Paragraph-1</p>
+      <p>Paragraph-2</p>
+      <p class="par3">Paragraph-3</p>
+      <p>Paragraph-4</p>
+      <p>Paragraph-5</p>
+    </div>
+
+    <script>
+      //  Selecting Parent Elements
+
+      let txt = document.querySelector(".text");
+      console.log(txt.parentNode);
+
+      //  Selecting Child nodes / Child Elements
+
+      let title=document.querySelector(".title");
+      console.log(title.firstChild);   //First Node will be text node (space)
+
+      console.log(title.firstElementChild);  //First element child will be paragraph-1
+
+      console.log(title.lastElementChild);  //Last element child will be paragraph-5
+
+      console.log(title.childNodes);  
+
+    //   Selecting Sibling Elements
+
+    let par3=document.querySelector(".par3");
+
+    console.log(par3.previousElementSibling);
+
+    console.log(par3.nextElementSibling);
+
+
+
+    </script>
+  </body>
+</html>

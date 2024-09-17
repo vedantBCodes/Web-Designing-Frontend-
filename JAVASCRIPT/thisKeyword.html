@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+        }
+
+        div {
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <div>click me</div>
+    <div>click me</div>
+    <div>click me</div>
+    <div>click me</div>
+</body>
+<script>
+
+    // this refers to the current object
+    function colorize() {
+        this.style.backgroundColor = 'black';
+        this.style.color = 'white';
+    }
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener('click', colorize);  //Here this will refer to buttons
+    }
+
+    let divs = document.getElementsByTagName("div");
+
+    for (let div of divs) {
+        div.addEventListener('click', colorize);   //Here this will refer to divs
+    }
+
+</script>
+
+</html>

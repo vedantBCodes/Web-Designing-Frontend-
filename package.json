@@ -9,5 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.3",
+    "react-bootstrap": "^2.10.4"
+  }
 }

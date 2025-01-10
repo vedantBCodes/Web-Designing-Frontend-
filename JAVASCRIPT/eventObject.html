@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Object</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <!--
+    Event - event is an object that stores all the information about event like event type , event target ,X and Y 
+    co-ordinates at which event occur.
+    -->
+    <script>
+        let btn=document.querySelector("button");
+        btn.addEventListener("click",(e)=>{
+            console.log(e);
+            console.log(e.target);
+            console.log(e.type);
+            console.log(e.clientX,e.clientY);
+        })
+    </script>
+</body>
+</html>

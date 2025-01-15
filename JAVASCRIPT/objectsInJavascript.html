@@ -33,6 +33,44 @@
 
         student.PRN=2312342;
         console.log(student);
+
+        // Iterating over an object
+
+        for(let i in student)
+        {
+            console.log(`${i} : ${student[i]}`);
+        }
+
+        var keys=Object.keys(student);
+        console.log(`Keys in a given object : ${keys}`);
+        
+        var values=Object.values(student);
+        console.log(`Values in a given object : ${values}`);
+
+        var keyValue=Object.entries(student);
+        console.log(`key-value pairs in a given object : ${keyValue}`);
+
+        //Calculating average marks of students
+
+        var studentMarks={
+            vedant:70,
+            rahul:80,
+            omkar:90
+        }
+        
+        var marks=Object.values(studentMarks);
+
+        var total=0;
+        var cnt=0;
+
+        for(var mark of marks)
+        {
+            total+=mark;
+            cnt++;
+        }
+
+        var avr=total/cnt;
+        console.log(`Average marks gained by students : ${avr}`);
     </script>
 </body>
 </html>

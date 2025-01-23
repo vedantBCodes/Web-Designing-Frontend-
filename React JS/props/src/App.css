@@ -1,0 +1,39 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+.App
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 200px;
+  
+}
+img
+{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.card
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+  gap: 20px;
+  background-color: rgb(236, 231, 225);
+  padding: 20px;
+  border-radius: 10px;
+}
+.disc
+{
+  width: 380px;
+}

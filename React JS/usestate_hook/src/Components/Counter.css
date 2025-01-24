@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    
+}
+.subContainer
+{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(238, 234, 229);
+    border-radius: 10px;
+    padding: 10px;
+}
+button
+{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}

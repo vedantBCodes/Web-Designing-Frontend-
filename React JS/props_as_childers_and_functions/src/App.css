@@ -1,0 +1,26 @@
+*
+{
+  font-size: 20px;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card
+{
+  width: 400px;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.counterCard
+{
+  text-align: center;
+  width: 400px;
+  background-color: rgb(196, 204, 211);
+  padding: 20px;
+  border-radius: 10px;
+}

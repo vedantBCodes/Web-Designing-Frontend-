@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="capture">Take Screenshot</button>
+    <div id="capture-area"> <!-- This is the area of screenshot-->
+        <h1>Screenshot This Area</h1>
+        <p>This is the content to capture. </p>
+        <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nemo a, maiores sint esse culpa quis earum
+            magnam reiciendis quam incidunt harum. Iusto rerum, officia laborum soluta aliquam similique molestias
+            eveniet nostrum omnis ducimus eius iure labore ipsum pariatur cumque, minus eos magni eaque. Delectus error
+            rerum ullam porro nemo labore quos iste assumenda sequi at culpa sapiente, inventore facere nihil ad impedit
+            vel tempora aperiam? Cumque vel vitae consequatur ab numquam aliquam neque, eaque ducimus voluptates aliquid
+            quo dolor sequi eveniet fuga non odio totam aperiam deserunt velit natus beatae sed? Nostrum excepturi
+            dolorem eaque accusamus ut! Sint, quis!</p>
+        <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nemo a, maiores sint esse culpa quis earum
+            magnam reiciendis quam incidunt harum. Iusto rerum, officia laborum soluta aliquam similique molestias
+            eveniet nostrum omnis ducimus eius iure labore ipsum pariatur cumque, minus eos magni eaque. Delectus error
+            rerum ullam porro nemo labore quos iste assumenda sequi at culpa sapiente, inventore facere nihil ad impedit
+            vel tempora aperiam? Cumque vel vitae consequatur ab numquam aliquam neque, eaque ducimus voluptates aliquid
+            quo dolor sequi eveniet fuga non odio totam aperiam deserunt velit natus beatae sed? Nostrum excepturi
+            dolorem eaque accusamus ut! Sint, quis!</p>
+        <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nemo a, maiores sint esse culpa quis earum
+            magnam reiciendis quam incidunt harum. Iusto rerum, officia laborum soluta aliquam similique molestias
+            eveniet nostrum omnis ducimus eius iure labore ipsum pariatur cumque, minus eos magni eaque. Delectus error
+            rerum ullam porro nemo labore quos iste assumenda sequi at culpa sapiente, inventore facere nihil ad impedit
+            vel tempora aperiam? Cumque vel vitae consequatur ab numquam aliquam neque, eaque ducimus voluptates aliquid
+            quo dolor sequi eveniet fuga non odio totam aperiam deserunt velit natus beatae sed? Nostrum excepturi
+            dolorem eaque accusamus ut! Sint, quis!</p>
+        <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nemo a, maiores sint esse culpa quis earum
+            magnam reiciendis quam incidunt harum. Iusto rerum, officia laborum soluta aliquam similique molestias
+            eveniet nostrum omnis ducimus eius iure labore ipsum pariatur cumque, minus eos magni eaque. Delectus error
+            rerum ullam porro nemo labore quos iste assumenda sequi at culpa sapiente, inventore facere nihil ad impedit
+            vel tempora aperiam? Cumque vel vitae consequatur ab numquam aliquam neque, eaque ducimus voluptates aliquid
+            quo dolor sequi eveniet fuga non odio totam aperiam deserunt velit natus beatae sed? Nostrum excepturi
+            dolorem eaque accusamus ut! Sint, quis!</p>
+        <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nemo a, maiores sint esse culpa quis earum
+            magnam reiciendis quam incidunt harum. Iusto rerum, officia laborum soluta aliquam similique molestias
+            eveniet nostrum omnis ducimus eius iure labore ipsum pariatur cumque, minus eos magni eaque. Delectus error
+            rerum ullam porro nemo labore quos iste assumenda sequi at culpa sapiente, inventore facere nihil ad impedit
+            vel tempora aperiam? Cumque vel vitae consequatur ab numquam aliquam neque, eaque ducimus voluptates aliquid
+            quo dolor sequi eveniet fuga non odio totam aperiam deserunt velit natus beatae sed? Nostrum excepturi
+            dolorem eaque accusamus ut! Sint, quis!</p>
+    </div>
+    <!-- Code copied from ChatGPT (just to save the code near)-->
+    <script>
+        document.getElementById("capture").addEventListener("click", function () {
+            html2canvas(document.getElementById("capture-area")).then(canvas => {
+                let imgURL = canvas.toDataURL("image/png");
+                let link = document.createElement("a");
+                link.href = imgURL;
+                link.download = "screenshot.png";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

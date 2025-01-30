@@ -1,0 +1,23 @@
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 30px;
+    
+}
+ul > li :hover
+{
+    color: red;
+    transition: 1s;
+}
+.activeLink
+{
+    color: black;
+}

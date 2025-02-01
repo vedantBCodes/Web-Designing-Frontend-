@@ -1,0 +1,15 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button
+{
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+

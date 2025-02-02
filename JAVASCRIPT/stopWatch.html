@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+        .container
+        {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button
+        {
+            padding: 5px 13px;
+            box-shadow: 0px 0px 4px black;
+        }
+        #statement
+        {
+            width: 280px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="statement"></button> <br> 
+        <button id="start">Start</button> <br> 
+        <button id="stop">Stop</button> <br> 
+        <button id="reset">Reset</button> <br>
+    </div>
+    <script>
+        var statement = document.querySelector('#statement');
+        var startBtn = document.querySelector('#start');
+        var stopBtn = document.querySelector('#stop');
+        var resetBtn = document.querySelector('#reset');
+        var time = 0;
+        var intervalID;
+
+        statement.innerText=`Stop Watch : ${time} seconds`;
+
+        startBtn.addEventListener('click', () =>{
+            intervalID=setInterval(() => {
+                time++;
+                statement.innerText=`Stop Watch : ${time} seconds`;
+            }, 100);
+            }
+            )
+        stopBtn.addEventListener('click', () =>{
+            clearInterval(intervalID);
+        });
+
+        resetBtn.addEventListener('click', () =>{
+            clearInterval(intervalID);
+            time=0;
+            statement.innerText=`Stop Watch : ${time} seconds`;
+        });
+
+    </script>
+</body>
+</html>

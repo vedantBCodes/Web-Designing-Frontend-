@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport">
     <title>Arrays in JS</title>
 </head>
+
 <body>
     <script>
-       var arr1=[1,2,3,4,5];
-       var arr2=[6,7,8,9,10];
+        var arr1 = [1, 2, 3, 4, 5];
+        var arr2 = [6, 7, 8, 9, 10];
 
         //Array methods
         //i---> concat()  ---> Performs concatenation of two arrays
 
-        var arr3=arr1.concat(arr2);
+        var arr3 = arr1.concat(arr2);
         console.log(arr3);
 
         //ii---> Includes()  ---->Checks whether the item is present in a given array or not
 
-        var check=arr1.includes(5);
-        if(check==true)
-        {
+        var check = arr1.includes(5);
+        if (check == true) {
             console.log(`5 is there in a given array `);
         }
-        else
-        {
+        else {
             console.log(`5 is not there in a given array `);
         }
-        
+
 
         //iii-->indexOf()  --->Return the index of a given item
 
@@ -37,11 +37,20 @@
         arr1.reverse();
         console.log(arr1);
 
-        //v--->slice()  --->slice the given array
+        //v--->slice()  --->slice the given array and does't change the original array
 
-        var arr4=arr2.slice(2,6);
+        var arr6 = ['a', 'b', 'c', 'd', 'e'];
+        var arr4 = arr6.slice(0, 3); //excluding end index
         console.log(arr4);
+        console.log(arr6);
+
+        //vi--->splice  ----->Silmilar to slice but changes the original array
+
+        var arr5 = arr6.splice(0, 3);  //including end index
+        console.log(arr5);
+        console.log(arr6);
 
     </script>
 </body>
+
 </html>

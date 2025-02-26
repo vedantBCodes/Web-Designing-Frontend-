@@ -1,0 +1,29 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.lottery
+{
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 14px;
+  font-size: 20px;
+}
+button
+{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+.container
+{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+  height: 35vh;
+}

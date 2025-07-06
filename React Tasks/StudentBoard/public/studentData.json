@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "phone": "9876543210",
+    "age": 20,
+    "gender": "Male"
+  },
+  {
+    "id": 2,
+    "name": "Ishita Patel",
+    "phone": "9123456780",
+    "age": 19,
+    "gender": "Female"
+  },
+  {
+    "id": 3,
+    "name": "Karan Verma",
+    "phone": "9012345678",
+    "age": 21,
+    "gender": "Male"
+  },
+  {
+    "id": 4,
+    "name": "Neha Singh",
+    "phone": "9988776655",
+    "age": 22,
+    "gender": "Female"
+  },
+  {
+    "id": 5,
+    "name": "Rohan Joshi",
+    "phone": "8899001122",
+    "age": 20,
+    "gender": "Male"
+  },
+  {
+    "id": 6,
+    "name": "Ananya Rao",
+    "phone": "9876001234",
+    "age": 18,
+    "gender": "Female"
+  },
+  {
+    "id": 7,
+    "name": "Siddharth Mehta",
+    "phone": "9345678912",
+    "age": 23,
+    "gender": "Male"
+  },
+  {
+    "id": 8,
+    "name": "Pooja Desai",
+    "phone": "9988123456",
+    "age": 19,
+    "gender": "Female"
+  },
+  {
+    "id": 9,
+    "name": "Vikram Chauhan",
+    "phone": "9123409876",
+    "age": 22,
+    "gender": "Male"
+  },
+  {
+    "id": 10,
+    "name": "Meera Nair",
+    "phone": "9001234567",
+    "age": 20,
+    "gender": "Female"
+  }
+]

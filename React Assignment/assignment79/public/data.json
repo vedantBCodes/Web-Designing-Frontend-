@@ -1,0 +1,62 @@
+[
+  {
+    "sr_no": 1,
+    "name": "Aarya Deshmukh",
+    "roll_no": 101,
+    "marks": 88
+  },
+  {
+    "sr_no": 2,
+    "name": "Kabir Sharma",
+    "roll_no": 102,
+    "marks": 76
+  },
+  {
+    "sr_no": 3,
+    "name": "Meera Patil",
+    "roll_no": 103,
+    "marks": 92
+  },
+  {
+    "sr_no": 4,
+    "name": "Rohan Verma",
+    "roll_no": 104,
+    "marks": 67
+  },
+  {
+    "sr_no": 5,
+    "name": "Isha Kulkarni",
+    "roll_no": 105,
+    "marks": 81
+  },
+  {
+    "sr_no": 6,
+    "name": "Arjun Mehta",
+    "roll_no": 106,
+    "marks": 73
+  },
+  {
+    "sr_no": 7,
+    "name": "Nisha Rane",
+    "roll_no": 107,
+    "marks": 85
+  },
+  {
+    "sr_no": 8,
+    "name": "Veer Joshi",
+    "roll_no": 108,
+    "marks": 90
+  },
+  {
+    "sr_no": 9,
+    "name": "Priya Nair",
+    "roll_no": 109,
+    "marks": 78
+  },
+  {
+    "sr_no": 10,
+    "name": "Aman Shetty",
+    "roll_no": 110,
+    "marks": 69
+  }
+]
